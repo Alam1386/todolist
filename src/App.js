@@ -18,6 +18,7 @@ class App extends React.Component{
     }
     this.handleInput = this.handleInput.bind(this);
     this.addItem = this.addItem.bind(this);
+    this.deleteItem = this.deleteItem.bind(this);
   }
   // handle function
   handleInput(e){
@@ -44,6 +45,14 @@ class App extends React.Component{
       })
     }
    }
+   // Adding the delete item function
+   deleteItem(key){
+     const filterItems = this.state.items.filter(item => 
+      item.key!==key);
+      this.setState({
+        items:filterItems
+      })
+   }
   render(){
     return(
       <div className='App'>
@@ -55,7 +64,8 @@ class App extends React.Component{
           <button type='submit'> Add</button>
         </form>
       </header>
-      <ListItems items = {this.state.items}/>
+      <ListItems items = {this.state.items}
+      deleteItem = {this.deleteItem}/>
       </div>
     )
   }
