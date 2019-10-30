@@ -2,13 +2,18 @@ body{
   background-color: #f5f5f7;
 }
 .App {
-  background-color: #fafafa;
-  min-height: 500px;
+  /* background-color: #fafafa;
+  min-height: 500px; */
   width: 400px;
   margin: 40px auto;
+  padding: 20px;
+}
+#to-do-list h1{
+  margin: 20px;
+  color: #4c9a2a;
 }
 #to-do-list input{
-  background-color: rgb(27,117,137);
+  background-color: #68bb59;
   border: 0;
   width: 200px;
   height: 50px;
@@ -19,7 +24,7 @@ body{
   color: #ffffff;
 }
 #to-do-list input::placeholder{
-  color: rgba(255,255,255,0.5);
+  color: rgba(255,255,255,0.8);
 }
 #to-do-list input:focus, #to-do-list button:focus{
   outline: none;
@@ -27,10 +32,14 @@ body{
 #to-do-list button{
   height: 50px;
   width: 80px;
+  text-transform: uppercase;
+  font-size: 16px;
   border-radius: 5px;
   border: 0;
-  background-color: rgb(202,156,24);
+  background-color: #4c9a2a;
   cursor: pointer;
-  font-weight: bolder;
   color:#fff;
+}
+.MuiPaper-elevation1{
+  padding: 20px;
 }

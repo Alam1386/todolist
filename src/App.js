@@ -4,7 +4,11 @@ import './App.css';
 import ListItems from './ListItems'
 import {library} from '@fortawesome/fontawesome-svg-core';
 import {faTrash} from '@fortawesome/free-solid-svg-icons';
+import { makeStyles } from '@material-ui/core/styles';
+import Paper from '@material-ui/core/Paper';
 library.add(faTrash);
+
+
 
 class App extends React.Component{
   constructor(props){
@@ -69,19 +73,22 @@ class App extends React.Component{
   render(){
     return(
       <div className='App'>
-        <header>
-        <form id="to-do-list"onSubmit={this.addItem}>
-          <input type='text' placeholder='Enter the text'
-          value={this.state.currentItem.text}
-          onChange={this.handleInput}/>
-          <button type='submit'> Add</button>
-        </form>
-      </header>
-      <ListItems items = {this.state.items}
-      deleteItem = {this.deleteItem}
-      setUpdate = {this.setUpdate}
-      />
-      </div>
+          <Paper>
+          <header>
+          <form id="to-do-list"onSubmit={this.addItem}>
+              <h1>Daily To Do List</h1>
+            <input type='text' placeholder='Enter the text'
+            value={this.state.currentItem.text}
+            onChange={this.handleInput}/>
+            <button type='submit'> Add</button>
+          </form>
+        </header>
+          <ListItems items = {this.state.items}
+          deleteItem = {this.deleteItem}
+          setUpdate = {this.setUpdate}
+          />
+        </Paper>
+        </div>
     )
   }
 }
