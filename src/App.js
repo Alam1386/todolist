@@ -88,6 +88,7 @@ class App extends React.Component{
           setUpdate = {this.setUpdate}
           />
         </Paper>
+        <p>Developed by: <a href="https://alamtalash.com" target="_blank">Alam Talash</a></p>
         </div>
     )
   }
