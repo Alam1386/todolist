@@ -19,6 +19,7 @@ class App extends React.Component{
     this.handleInput = this.handleInput.bind(this);
     this.addItem = this.addItem.bind(this);
     this.deleteItem = this.deleteItem.bind(this);
+    this.setUpdate = this.setUpdate.bind(this);
   }
   // handle function
   handleInput(e){
@@ -53,6 +54,18 @@ class App extends React.Component{
         items:filterItems
       })
    }
+   // Creating the Updae function so that enables us to edit the list.
+   setUpdate(text, key){
+     const items = this.state.items;
+     items.map(item =>{
+       if(item.key === key){
+         item.text = text;
+       }
+     })
+     this.setState({
+       items: items
+     })
+   }
   render(){
     return(
       <div className='App'>
@@ -65,7 +78,9 @@ class App extends React.Component{
         </form>
       </header>
       <ListItems items = {this.state.items}
-      deleteItem = {this.deleteItem}/>
+      deleteItem = {this.deleteItem}
+      setUpdate = {this.setUpdate}
+      />
       </div>
     )
   }
