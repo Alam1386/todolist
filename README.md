@@ -1,4 +1,5 @@
 <img src="screenshot.png" width=700 >
+
 # Daily To Do List
 
 The Daily To Do List App is a very simple App that provides the space where you can list all the jobs that you are going to do it on that day. 
