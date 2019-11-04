@@ -20,7 +20,7 @@ The Daily To Do List App is a very simple App that provides the space where you 
 * Paper
 
 Please click the bellow link to view it online!
-https://alamtalash.com
+https://alam1386.github.io/todolist/
 
 ### Developed by:
 Alam Talash
