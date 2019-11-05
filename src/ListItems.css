@@ -1,8 +1,7 @@
 .list{
   color: #4c9a2a;
-  width: 300px;
+  width: 500px;
   box-shadow: 0px 1px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12);
-
   height: 50px;
   margin: 20px auto;
   border-radius: 5px;
@@ -23,6 +22,7 @@
 .list p input{
   background-color: transparent;
   border: 0;
+  width: 470px;
   color: #4c9a2a;
   font-size: 18px;
 }

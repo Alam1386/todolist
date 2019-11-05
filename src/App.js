@@ -76,11 +76,11 @@ class App extends React.Component{
           <Paper>
           <header>
           <form id="to-do-list"onSubmit={this.addItem}>
-              <h1>Daily To Do List</h1>
-            <input type='text' placeholder='Enter the text'
+              <h1>Daily to do App</h1>
+            <input type='text' placeholder='Type the task!'
             value={this.state.currentItem.text}
             onChange={this.handleInput}/>
-            <button type='submit'> Add</button>
+            <button type='submit'> Add to the list</button>
           </form>
         </header>
           <ListItems items = {this.state.items}

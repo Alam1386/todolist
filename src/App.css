@@ -2,7 +2,7 @@ body{
   background-color: #f5f5f7;
 }
 .App {
-  width: 400px;
+  width: 600px;
   margin: 40px auto;
   padding: 20px;
 }
@@ -13,12 +13,12 @@ body{
 #to-do-list input{
   background-color: #68bb59;
   border: 0;
-  width: 200px;
+  width: 300px;
   height: 50px;
-  padding: 0 20px;
+  padding: 0 10px;
   margin: 20px;
   font-size: 18px;
-  border-radius: 10px;
+  border-radius: 2px;
   color: #ffffff;
 }
 #to-do-list input::placeholder{
@@ -29,10 +29,11 @@ body{
 }
 #to-do-list button{
   height: 50px;
-  width: 80px;
+  width: 200px;
+  padding: 0 20px;
   text-transform: uppercase;
   font-size: 16px;
-  border-radius: 5px;
+  border-radius: 25px;
   border: 0;
   background-color: #4c9a2a;
   cursor: pointer;
